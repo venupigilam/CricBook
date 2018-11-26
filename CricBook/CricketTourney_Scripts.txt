@@ -1,0 +1,65 @@
+
+tblGameType 	Columns		DataType	isMandatory	
+		Id#		Number		Pk
+		GameType 	nvarchar(50)	Yes
+		Description	nvarchar(50)
+
+tblMatchType 	Columns		DataType	isMandatory
+		Id#		Number		Pk
+		MatchType 	nvarchar(50)	Yes
+		Description	nvarchar(50)
+
+tblMatch	
+		Id#		Number		Pk
+		Name		nvarchar(50)	Yes
+		Team_A		Number		Fk_TblTeam
+		Team_B		Number		Fk_TblTeam
+		Venue_Details	nvarchar(150)	Yes
+		MatchDatetime	dateTime	Yes
+		MatchType	Number		Fk_tblMatchType
+		MatchWonby	Number		Fk_TblTeam
+		Result		nvarchar(100)
+		MOM		Number		Fk_tblPlayer
+		GameType	Number		Fk_GameType
+
+tblTeam		
+		Id#		Number		Pk
+		Name		nvarchar(50)	Yes
+		Company		nvarchar(50)	Yes
+		Country		Number		Fk_tblCountry
+		State		Number		Fk_tblState
+		City		Number		Fk_tblCity
+
+tblPlayer
+		Id#		Number		Pk
+		FirstName	nvarchar(50)	Yes
+		LastName	nvarchar(50)	Yes
+		DOB 		date		No	
+		Gender		Number		Fk_tblGender
+		Country		Number		Fk_tblCountry
+		State		Number		Fk_tblState
+		City		Number		Fk_tblCity
+
+tblCountry	
+		Id#		Number		Pk
+		Name		nvarchar(50)	Yes
+
+
+tblState
+		Id#		Number		Pk
+		Name		nvarchar(50)	Yes
+		Country		Number		Fk_Country
+
+tblCity	
+		Id#		Number		Pk
+		Name		nvarchar(50)	Yes
+		State		Number		Fk_State
+
+tblGender
+		Id#		Number		Pk
+		Name		nvarchar(15)	Yes
+
+tblScoreCard	
+		Id#		Number		Pk
+		OverSlno	Number
+
