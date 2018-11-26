@@ -59,7 +59,17 @@ tblGender
 		Id#		Number		Pk
 		Name		nvarchar(15)	Yes
 
+tblExtras	
+		Id#		Number		Pk
+		Name		nvarchar(15)	Yes
+
 tblScoreCard	
 		Id#		Number		Pk
 		OverSlno	Number
 
+
+
+
+ScoreByOVer
+FallOfwickets
+Partnership
