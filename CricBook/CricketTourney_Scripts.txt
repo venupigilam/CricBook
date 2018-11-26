@@ -73,3 +73,11 @@ tblScoreCard
 ScoreByOVer
 FallOfwickets
 Partnership
+
+
+Match Info
+Match AUS vs IND, 1st Test, India tour of Australia, 2018-19 
+Date Thursday, December 06, 2018 - Monday, December 10, 2018 
+Time 12:00 AM GMT 
+Venue Adelaide Oval, Adelaide
+
