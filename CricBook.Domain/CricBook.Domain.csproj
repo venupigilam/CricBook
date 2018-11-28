@@ -118,6 +118,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dbScripts\CricketTourney_Scripts.txt" />
     <Content Include="Test.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Test.edmx</DependentUpon>

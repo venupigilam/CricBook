@@ -9,9 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricBook.Domain", "CricBook
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricBook.Data", "CricBook.Data\CricBook.Data.csproj", "{C48B1D91-9EC6-4AB6-A4CB-D301AC8CF317}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricBook.UnitTest", "CricBook.UnitTest\CricBook.UnitTest.csproj", "{71D0CF82-4BFB-4556-8CDB-01F42F782C43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricBook.Api", "CricBook.Api\CricBook.Api.csproj", "{6A78F97A-04B5-4CF7-9ACC-F3D4461B97A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrickBook.UITest", "CrickBook.UITest\CrickBook.UITest.csproj", "{7A1B3A00-A838-40B3-B236-0ED887EDF414}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricBook.Api.Tests", "CricBook.Api.Tests\CricBook.Api.Tests.csproj", "{8D30354D-FBBF-4FB2-BC53-BF0A2A82F0DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrickBook.UI", "CrickBook.UI\CrickBook.UI.csproj", "{A9C917F4-D1C3-46D2-A6D4-13904FE91810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrickBook.UI.Tests", "CrickBook.UI.Tests\CrickBook.UI.Tests.csproj", "{1D14C803-858A-4063-8C33-615BE046E2DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +35,22 @@ Global
 		{C48B1D91-9EC6-4AB6-A4CB-D301AC8CF317}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C48B1D91-9EC6-4AB6-A4CB-D301AC8CF317}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C48B1D91-9EC6-4AB6-A4CB-D301AC8CF317}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71D0CF82-4BFB-4556-8CDB-01F42F782C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71D0CF82-4BFB-4556-8CDB-01F42F782C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71D0CF82-4BFB-4556-8CDB-01F42F782C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71D0CF82-4BFB-4556-8CDB-01F42F782C43}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7A1B3A00-A838-40B3-B236-0ED887EDF414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A1B3A00-A838-40B3-B236-0ED887EDF414}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A1B3A00-A838-40B3-B236-0ED887EDF414}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A1B3A00-A838-40B3-B236-0ED887EDF414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A78F97A-04B5-4CF7-9ACC-F3D4461B97A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A78F97A-04B5-4CF7-9ACC-F3D4461B97A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A78F97A-04B5-4CF7-9ACC-F3D4461B97A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A78F97A-04B5-4CF7-9ACC-F3D4461B97A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D30354D-FBBF-4FB2-BC53-BF0A2A82F0DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D30354D-FBBF-4FB2-BC53-BF0A2A82F0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D30354D-FBBF-4FB2-BC53-BF0A2A82F0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D30354D-FBBF-4FB2-BC53-BF0A2A82F0DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9C917F4-D1C3-46D2-A6D4-13904FE91810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C917F4-D1C3-46D2-A6D4-13904FE91810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C917F4-D1C3-46D2-A6D4-13904FE91810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C917F4-D1C3-46D2-A6D4-13904FE91810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D14C803-858A-4063-8C33-615BE046E2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D14C803-858A-4063-8C33-615BE046E2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D14C803-858A-4063-8C33-615BE046E2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D14C803-858A-4063-8C33-615BE046E2DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
