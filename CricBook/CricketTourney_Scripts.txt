@@ -54,6 +54,7 @@ tblCity
 		Id#		Number		Pk
 		Name		nvarchar(50)	Yes
 		State		Number		Fk_State
+		 CONSTRAINT [FK_tblCity_TotblState] FOREIGN KEY ([Id]) REFERENCES [tblState]([Id])	
 
 tblGender
 		Id#		Number		Pk

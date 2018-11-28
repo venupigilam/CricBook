@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1c0e51f2184e4ab2bf8a4089638179cb" Name="Diagram1">
+        <EntityTypeShape EntityType="CricBookModel.tblCity" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricBookModel.tblCompany" Width="1.5" PointX="8.25" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricBookModel.tblCountry" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricBookModel.tblExtra" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricBookModel.tblGameType" Width="1.5" PointX="10.5" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricBookModel.tblGender" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricBookModel.tblMatch" Width="1.5" PointX="12.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricBookModel.tblMatchType" Width="1.5" PointX="10.5" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricBookModel.tblPlayer" Width="1.5" PointX="7.5" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricBookModel.tblState" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricBookModel.tblStatu" Width="1.5" PointX="8.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CricBookModel.tblTeam" Width="1.5" PointX="10.5" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="CricBookModel.FK_tblCity_TotblState" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblPlayer_tblCity" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblTeam_tblCity" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblTeam_tblCompany" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblPlayer_tblCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblState_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblTeam_tblCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblGameType_TotblStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblMatch_GameType" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblPlayer_tblGender" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblMatch_MatchType" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblMatch_MatchWonBy" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblMatch_MOM" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblMatch_TeamA" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblMatch_TeamB" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblPlayer_tblState" ManuallyRouted="false" />
+        <AssociationConnector Association="CricBookModel.FK_tblTeam_tblState" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
