@@ -14,18 +14,8 @@ namespace CricBook.Domain
     
     public partial class tblGameType
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public tblGameType()
-        {
-            this.tblMatches = new HashSet<tblMatch>();
-        }
-    
         public int Id { get; set; }
         public string Name { get; set; }
         public Nullable<int> Status { get; set; }
-    
-        public virtual tblStatu tblStatu { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tblMatch> tblMatches { get; set; }
     }
 }

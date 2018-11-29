@@ -51,84 +51,88 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CricBook_DBModelEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CricBook_DBModelEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CricBook_DBModelEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CricBook_DBModelEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CricBook_DBModelEntities.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tblCity.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="tblCompany.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="tblCountry.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="tblExtra.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="tblGameType.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="tblGender.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMatch.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="tblMatchType.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tblOut.cs">
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="tblPlayer.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="tblState.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="tblStatu.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="tblTeam.cs">
-      <DependentUpon>Test.tt</DependentUpon>
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Test.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Test.Context.tt</DependentUpon>
+    <Compile Include="tblUmpire.cs">
+      <DependentUpon>CricBook_DBModelEntities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Test.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Test.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Test.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Test.edmx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="Test.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Test.Designer.cs</LastGenOutput>
-    </EntityDeploy>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="packages.config" />
-    <None Include="Test.edmx.diagram">
-      <DependentUpon>Test.edmx</DependentUpon>
+    <EntityDeploy Include="CricBook_DBModelEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CricBook_DBModelEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="CricBook_DBModelEntities.edmx.diagram">
+      <DependentUpon>CricBook_DBModelEntities.edmx</DependentUpon>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CricBook_DBModelEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CricBook_DBModelEntities.edmx</DependentUpon>
+      <LastGenOutput>CricBook_DBModelEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CricBook_DBModelEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CricBook_DBModelEntities.edmx</DependentUpon>
+      <LastGenOutput>CricBook_DBModelEntities.cs</LastGenOutput>
+    </Content>
     <Content Include="dbScripts\CricketTourney_Scripts.txt" />
-    <Content Include="Test.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Test.edmx</DependentUpon>
-      <LastGenOutput>Test.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Test.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Test.edmx</DependentUpon>
-      <LastGenOutput>Test.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

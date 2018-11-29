@@ -13,10 +13,10 @@ namespace CricBook.Domain
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CricBookEntities : DbContext
+    public partial class CricBookEntities1 : DbContext
     {
-        public CricBookEntities()
-            : base("name=CricBookEntities")
+        public CricBookEntities1()
+            : base("name=CricBookEntities1")
         {
         }
     
@@ -37,5 +37,7 @@ namespace CricBook.Domain
         public virtual DbSet<tblState> tblStates { get; set; }
         public virtual DbSet<tblStatu> tblStatus { get; set; }
         public virtual DbSet<tblTeam> tblTeams { get; set; }
+        public virtual DbSet<tblUmpire> tblUmpires { get; set; }
+        public virtual DbSet<tblOut> tblOuts { get; set; }
     }
 }

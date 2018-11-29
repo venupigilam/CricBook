@@ -25,12 +25,5 @@ namespace CricBook.Domain
         public string Result { get; set; }
         public Nullable<int> MOM { get; set; }
         public Nullable<int> GameType { get; set; }
-    
-        public virtual tblGameType tblGameType { get; set; }
-        public virtual tblMatchType tblMatchType { get; set; }
-        public virtual tblTeam tblTeam { get; set; }
-        public virtual tblPlayer tblPlayer { get; set; }
-        public virtual tblTeam tblTeam1 { get; set; }
-        public virtual tblTeam tblTeam2 { get; set; }
     }
 }
